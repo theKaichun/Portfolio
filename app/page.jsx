@@ -23,7 +23,7 @@ const Home = () => {
             </p>
             {/* btn amd socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/鎧君.pdf" download="鎧君.pdf">
+              <a href="/assets/鎧君.pdf" download="鎧君.pdf">
                 <Button
                   variant="outline"
                   size="lg"
