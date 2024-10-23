@@ -29,11 +29,11 @@ export default async function handler(req, res) {
           <p><strong>訊息：</strong> ${message}</p>
         `,
       });
-
-      res.status(200).json({ message: "郵件發送成功" });
     } catch (error) {
-      console.log(error);
-      res.status(500).json({ error: "郵件發送時發生錯誤", ...error });
+      console.error("發送郵件時發生錯誤:", error); // 加入錯誤日誌
+      res
+        .status(500)
+        .json({ error: "郵件發送時發生錯誤", details: error.message });
     }
   } else {
     res.status(405).json({ error: "不允許的請求方法" });

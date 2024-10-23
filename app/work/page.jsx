@@ -34,8 +34,9 @@ const projects = [
     title: "project 2",
     description: "",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css " }],
-    image: "",
-    live: "",
+    image: "/assets/work/thumb2.png",
+    live: "https://coffeeshop-silk.vercel.app/",
+
     github: "",
   },
 ];
@@ -43,10 +44,7 @@ const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (swiper) => {
-    //get current slide index
-
     const currentIndex = swiper.activeIndex;
-    // update project state based on current slide index
 
     setProject(projects[currentIndex]);
   };
