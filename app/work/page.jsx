@@ -25,8 +25,8 @@ const projects = [
     description: "",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://hero-page-mu.vercel.app/",
+    github: "https://github.com/theKaichun/Hero-page",
   },
   {
     num: "02",
@@ -36,8 +36,7 @@ const projects = [
     stack: [{ name: "Next.js" }, { name: "Tailwind.css " }],
     image: "/assets/work/thumb2.png",
     live: "https://coffeeshop-silk.vercel.app/",
-
-    github: "",
+    github: "https://github.com/theKaichun/coffeeshop/tree/main",
   },
 ];
 const Work = () => {
