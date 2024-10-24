@@ -23,10 +23,10 @@ module.exports = {
 
     extend: {
       colors: {
-        primary: "#1c1c22",
+        primary: "#2879c0",
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#e0e3d7",
+          hover: "#c3e0e5",
         },
       },
       keyframes: {
